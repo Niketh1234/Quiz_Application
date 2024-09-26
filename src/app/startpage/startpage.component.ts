@@ -48,7 +48,7 @@ export class StartpageComponent {
   }
   loadQuestions() {
     this.http
-      .get(this.apis.api_urls['Mathematics'])
+      .get(this.apis.api_urls[this.apis.category_value])
       .subscribe((response: any) => {
         this.questionsList = response.results;
         this.options = this.getRandomizedArray(

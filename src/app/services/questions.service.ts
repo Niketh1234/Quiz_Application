@@ -6,7 +6,7 @@ import { Injectable } from '@angular/core';
 export class QuestionsService {
   url_category: string = 'https://opentdb.com/api.php?amount=10&category=';
   url_difficulty: string = '&difficulty=medium&type=multiple';
-  category_value:string = '';
+  category_value: string = '';
   api_urls: { [key: string]: string } = {
     'General Knowledge': `${this.url_category}9${this.url_difficulty}`,
     Geography: `${this.url_category}22${this.url_difficulty}`,

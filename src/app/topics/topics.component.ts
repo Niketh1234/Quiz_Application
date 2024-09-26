@@ -35,7 +35,7 @@ export class TopicsComponent {
   ];
 
   handleTopicClick(topic: string): void {
+    this.showQuiz = !this.showQuiz;
     this.urls.category_value = topic;
-    console.log(this.urls.category_value);
   }
 }

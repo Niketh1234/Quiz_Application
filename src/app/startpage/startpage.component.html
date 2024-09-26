@@ -1,8 +1,18 @@
 <div class="startPageContainer">
   @if(showQuizButton){
-  <button class="startQuizButton" (click)="toggleQuizQuestions()">
-    Start Quiz
-  </button>
+  <div class="warningContainer">
+    <div style="display: flex; flex-direction: column">
+      <h3 style="margin: 0; font-weight: 500">Rules</h3>
+      <span class="rule">Time Limit: No TimeLimit.</span>
+      <span class="rule">Scoring: Earn points for each correct answer.</span>
+      <span class="rule">
+        No Backtracking: You can't change your answer once submitted.</span
+      >
+    </div>
+    <button class="startQuizButton" (click)="toggleQuizQuestions()">
+      Start Quiz
+    </button>
+  </div>
   } @if(showQuiz){
   <section class="sectionContainer">
     <div class="top">
@@ -60,9 +70,8 @@
       style="display: flex; justify-content: space-between; margin-top: 20px"
     >
       <button class="nextQuestionButton" (click)="handleReTakeQuizButton()">
-        ReTake
+        Home
       </button>
-      <button class="nextQuestionButton">Home</button>
     </div>
   </div>
   }
