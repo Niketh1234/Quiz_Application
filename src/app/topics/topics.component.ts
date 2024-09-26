@@ -22,7 +22,6 @@ export class TopicsComponent {
     'Mythology',
     'History',
     'Politics',
-    'Art',
     'Computers',
     'Science & Nature',
     'Animals',

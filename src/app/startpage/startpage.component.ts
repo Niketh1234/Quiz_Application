@@ -33,7 +33,6 @@ export class StartpageComponent {
   toggleQuizQuestions() {
     this.showQuiz = !this.showQuiz;
     this.showQuizButton = !this.showQuizButton;
-    console.log(this.questionsList[0]);
   }
 
   /* constructor to initialize httpClient object */
@@ -50,12 +49,35 @@ export class StartpageComponent {
     this.http
       .get(this.apis.api_urls[this.apis.category_value])
       .subscribe((response: any) => {
-        this.questionsList = response.results;
+        this.questionsList = response.results.map((question: any) => {
+          question.question = this.decodeHtmlEntities(question.question);
+          question.incorrect_answers = question.incorrect_answers.map(
+            (answer: string) => this.decodeHtmlEntities(answer)
+          );
+          question.correct_answer = this.decodeHtmlEntities(
+            question.correct_answer
+          );
+          return question;
+        });
         this.options = this.getRandomizedArray(
           this.questionsList[this.currentQuestion].incorrect_answers,
           this.questionsList[this.currentQuestion].correct_answer
         );
       });
+  }
+
+  decodeHtmlEntities(text: string): string {
+    const entities: { [key: string]: string } = {
+      '&quot;': '"',
+      '&#039;': "'",
+      '&amp;': '&',
+      '&lt;': '<',
+      '&gt;': '>',
+    };
+    return text.replace(
+      /&quot;|&#039;|&amp;|&lt;|&gt;/g,
+      (match) => entities[match]
+    );
   }
 
   /* Variables and functions declared for the management of quiz  */

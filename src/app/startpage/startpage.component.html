@@ -2,12 +2,16 @@
   @if(showQuizButton){
   <div class="warningContainer">
     <div style="display: flex; flex-direction: column">
-      <h3 style="margin: 0; font-weight: 500">Rules</h3>
-      <span class="rule">Time Limit: No TimeLimit.</span>
-      <span class="rule">Scoring: Earn points for each correct answer.</span>
-      <span class="rule">
-        No Backtracking: You can't change your answer once submitted.</span
-      >
+      <h3 style="margin: 0; font-weight: 500">Rules :</h3>
+      <div class="ruleContainer">
+        <span class="rule">1. There is no time limit.</span>
+        <span class="rule"
+          >2. One point is awarded for every correct answer</span
+        >
+        <span class="rule">
+          3. You can't change your answer once submitted.</span
+        >
+      </div>
     </div>
     <button class="startQuizButton" (click)="toggleQuizQuestions()">
       Start Quiz
@@ -17,10 +21,6 @@
   <section class="sectionContainer">
     <div class="top">
       <h3 style="margin: 0; font-weight: 500">Answer the quiz</h3>
-      <!-- <div class="timerContainer">
-        <span> Time : </span>
-        <div class="timer">10</div>
-      </div> -->
     </div>
     <div class="middle">
       <span class="questionText"
