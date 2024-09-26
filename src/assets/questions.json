@@ -1,0 +1,103 @@
+[
+    {
+      "questionId": 1,
+      "question": "What does HTML stand for?",
+      "options": [
+        { "answer": "Hyper Text Markup Language", "isCorrect": true },
+        { "answer": "Home Tool Markup Language", "isCorrect": false },
+        { "answer": "Hyperlinks and Text Markup Language", "isCorrect": false },
+        { "answer": "Hyperlinking Text Marking Language", "isCorrect": false }
+      ]
+    },
+    {
+      "questionId": 2,
+      "question": "Which language is used for styling web pages?",
+      "options": [
+        { "answer": "HTML", "isCorrect": false },
+        { "answer": "JQuery", "isCorrect": false },
+        { "answer": "CSS", "isCorrect": true },
+        { "answer": "XML", "isCorrect": false }
+      ]
+    },
+    {
+      "questionId": 3,
+      "question": "Which is not a JavaScript Framework?",
+      "options": [
+        { "answer": "Python Script", "isCorrect": true },
+        { "answer": "JQuery", "isCorrect": false },
+        { "answer": "Django", "isCorrect": false },
+        { "answer": "NodeJS", "isCorrect": false }
+      ]
+    },
+    {
+      "questionId": 4,
+      "question": "Which is used for Connect To Database?",
+      "options": [
+        { "answer": "PHP", "isCorrect": true },
+        { "answer": "HTML", "isCorrect": false },
+        { "answer": "JS", "isCorrect": false },
+        { "answer": "All", "isCorrect": false }
+      ]
+    },
+    {
+      "questionId": 5,
+      "question": "Which tool can you use to ensure code quality?",
+      "options": [
+        { "answer": "Angular", "isCorrect": false },
+        { "answer": "jQuery", "isCorrect": false },
+        { "answer": "RequireJS", "isCorrect": false },
+        { "answer": "ESLint", "isCorrect": true }
+      ]
+    },
+    {
+      "questionId": 6,
+      "question": "Which of the following is not a programming language?",
+      "options": [
+        { "answer": "TypeScript", "isCorrect": false },
+        { "answer": "Python", "isCorrect": false },
+        { "answer": "Anaconda", "isCorrect": true },
+        { "answer": "Java", "isCorrect": false }
+      ]
+    },
+    {
+      "questionId": 7,
+      "question": "Which of the following is a server-side JavaScript framework?",
+      "options": [
+        { "answer": "React", "isCorrect": false },
+        { "answer": "Angular", "isCorrect": false },
+        { "answer": "Vue", "isCorrect": false },
+        { "answer": "Node.js", "isCorrect": true }
+      ]
+    },
+    {
+      "questionId": 8,
+      "question": "What does CSS stand for?",
+      "options": [
+        { "answer": "Cascading Style Sheets", "isCorrect": true },
+        { "answer": "Creative Style Sheets", "isCorrect": false },
+        { "answer": "Computer Style Sheets", "isCorrect": false },
+        { "answer": "Colorful Style Sheets", "isCorrect": false }
+      ]
+    },
+    {
+      "questionId": 9,
+      "question": "Which HTML attribute is used to define inline styles?",
+      "options": [
+        { "answer": "class", "isCorrect": false },
+        { "answer": "font", "isCorrect": false },
+        { "answer": "styles", "isCorrect": false },
+        { "answer": "style", "isCorrect": true }
+      ]
+    },
+    {
+      "questionId": 10,
+      "question": "Which is the correct CSS syntax?",
+      "options": [
+        { "answer": "body:color=black;", "isCorrect": false },
+        { "answer": "{body;color:black;}", "isCorrect": false },
+        { "answer": "body {color: black;}", "isCorrect": true },
+        { "answer": "{body:color=black;}", "isCorrect": false }
+      ]
+    }
+  ]
+  
