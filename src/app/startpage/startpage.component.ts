@@ -1,6 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { QuestionsService } from '../services/questions.service';
 
 @Component({
   selector: 'app-startpage',
@@ -36,7 +37,7 @@ export class StartpageComponent {
   }
 
   /* constructor to initialize httpClient object */
-  constructor(private http: HttpClient) {}
+  constructor(private http: HttpClient, private apis: QuestionsService) {}
 
   /* Loading of new questions on loading of the page */
   questionsList: any[] = [];
@@ -47,9 +48,7 @@ export class StartpageComponent {
   }
   loadQuestions() {
     this.http
-      .get(
-        'https://opentdb.com/api.php?amount=10&category=21&difficulty=medium&type=multiple'
-      )
+      .get(this.apis.api_urls['Mathematics'])
       .subscribe((response: any) => {
         this.questionsList = response.results;
         this.options = this.getRandomizedArray(

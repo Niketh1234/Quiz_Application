@@ -1,8 +1,14 @@
 <div>
   <h1 style="margin-left: 50px">Choose a topic :</h1>
   <div class="topicsContainer">
-    <div *ngFor="let topic of allTopics; let i = index" class="topicBox">
-      {{ topic }}
+    <div *ngFor="let topic of allTopics; let i = index">
+      <div class="topicBox" (click)="handleTopicClick(topic)">
+        {{ topic }}
+      </div>
     </div>
   </div>
 </div>
+
+@if(showQuiz){
+<app-startpage></app-startpage>
+}
